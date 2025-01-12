@@ -13,6 +13,10 @@
     outline:solid red;
     max-width: 250px;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .products__img{
     width: 200px;
@@ -20,7 +24,8 @@
 }
 
 .is-hidden{
-    display: none;
+    opacity: 0;
+    pointer-events: none;
 }
 .backdrop{
     position: fixed;
@@ -41,4 +46,14 @@
 }
 .modal__title{
     text-align: center;
+}
+.modal__exit{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.modal__img{
+    width: 200px;
+    max-width: 100%;
 }
